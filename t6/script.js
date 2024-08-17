@@ -5,7 +5,7 @@ const navbar = document.querySelector('nav');
 const navlist = document.querySelectorAll('.navvy a');
 const sections = document.querySelectorAll('.section')
 
-
+ 
 hamburger1.addEventListener('click', e => {
     sideBar.classList.add('active');
 });
