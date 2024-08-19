@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T7</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <nav>
@@ -44,9 +45,41 @@
     </aside>
     <section id="HOME"></section>
     <section id="SEARCH"></section>
-    <section id="LOGIN"></section>
+    <section id="LOGIN">
+        <div class="w">h</div>
+    </section>
     <section id="LOGOUT"></section>
-    <section id="REGISTER"></section>
+    <section id="REGISTER">
+        <form action="">
+            <div class="input_container">
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" placeholder="ENTER FIRST NAME..." required>
+                <p>Please enter valid first name!</p>
+            </div>
+            <div class="input_container" >
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" placeholder="ENTER LAST NAME..." required>
+                <p>Please enter valid last name</p>
+            </div>
+            <!-- <div class="input_container" >
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="ENTER EMAIL" required>
+            </div>
+            <div class="input_container" >
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="ENTER PASSWORD..." required>
+            </div>
+            <div class="input_container" >
+                <label for="birth_date">Birth Date</label required>
+                <input type="date" name="birth_date">
+            </div>
+            <div class="input_container" >
+                <button class="button-register">CLICK ME</button>
+            </div> -->
+        </form>
+    </section>
+
     <script src="script.js" ></script>
+    <script src="register.js" ></script>
 </body>
 </html>

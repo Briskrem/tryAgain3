@@ -175,4 +175,69 @@ section{
 }
 #REGISTER{
     background: plum;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---form--- */
+
+form{
+    height: 80%;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: .4rem;
+    background: linear-gradient(33deg, rgb(105, 105, 186), gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input_container{
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: blueviolet;
+    font-size: 2rem;
+    border: 2px solid black;
+    padding: 0 2rem 0 2rem;
+    transition: .2s ease;
+}
+.input_container.Valid{
+    color: lime;
+}
+.input_container.Invalid{
+    color: red;
+}
+.input_container > p{
+    opacity: 0;
+}
+    
+.input_container.Invalid > p{
+    opacity: 1;
+} 
+.input_container input{
+    height: 4rem;
+    width: 50%;
+    border-radius: .4rem;
+    outline: 0;
+    border: 0;
+    color: rgb(184, 66, 66);
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    margin-left: 3rem;
+    box-shadow: inset 5px 0 0 0  rgb(49, 56, 193);
+}
+.input_container:nth-child(6){
+    justify-content: center;
+}
+.button-register{
+    height: 3rem;
+    width: 10rem;
+    border-radius: .4rem;
+    border: 0;
+    box-shadow:0 3px 5px black ;
+    background: linear-gradient(45deg, skyblue, yellow);
 }
